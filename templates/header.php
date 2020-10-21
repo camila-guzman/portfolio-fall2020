@@ -27,8 +27,8 @@
             <div class="nav-list">
                 <a href="./portfolio.php"> <span>Portfolio</span></a>
                 <a href="./about.php"> <span>About</span></a>
-                <a href="./resume.php"><span>Resume</span></a></li>
-                <a href="./contact.php"><span>Contact</span></a></li>
+                <a href="./resume.php"><span>Resume</span></a>
+                <a href="./contact.php"><span>Contact</span></a>
                 </ul>
             </div>
 
