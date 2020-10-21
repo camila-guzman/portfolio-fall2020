@@ -1,0 +1,16 @@
+// import the following files
+@import "variables";
+@import "mixins";
+
+// import Google Font
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&display=swap");
+
+// include the following mixins
+@include font-style;
+@include hover-style;
+@include sidebar-style;
+
+@include portfolio-style;
+@include about-style;
+@include resume-style;
+@include contact-style;

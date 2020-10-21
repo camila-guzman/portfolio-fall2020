@@ -1,0 +1,87 @@
+// import variables
+@import "variables";
+
+@mixin font-style {
+  body {
+    font-family: "Karla", sans-serif;
+    color: $dark-color;
+  }
+
+  .name {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  .nav-list a {
+    writing-mode: vertical-rl;
+    font-size: 1.75em;
+    text-align: right;
+  }
+  a {
+    text-decoration: none;
+    color: $dark-color;
+  }
+  .social-links {
+    line-height: 25px;
+  }
+}
+
+@mixin hover-style {
+  .nav-list a:hover {
+    writing-mode: horizontal-tb;
+    text-decoration: none;
+    color: $medium-color;
+  }
+  a:hover {
+    color: $medium-color;
+    text-decoration: none;
+  }
+}
+
+@mixin sidebar-style {
+  .sidebar {
+    padding: $p-standard;
+    background-color: $light-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid $dark-color;
+  }
+  .logo-img {
+    display: block;
+    margin: auto;
+    max-width: 60px;
+    height: auto;
+    padding-bottom: $p-minimum;
+  }
+  .name {
+    border-bottom: 2px solid $dark-color;
+  }
+  .social-links {
+    margin-top: $m-standard;
+  }
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    margin-top: $m-standard;
+  }
+  .nav-list a {
+    margin-right: $m-standard;
+  }
+}
+
+@mixin portfolio-style {
+}
+
+@mixin about-style {
+}
+
+@mixin resume-style {
+}
+
+@mixin contact-style {
+}
