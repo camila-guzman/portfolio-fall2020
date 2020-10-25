@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php include './portfolio.php'; ?>
 
-<!--include head section and navbar-->
-<?php include 'templates/header.php'; ?>
+</div>
 
-<p>This is the body</p>
-
-<?php include 'templates/footer.php'; ?>
 
 </html>

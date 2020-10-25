@@ -6,10 +6,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&display=swap");
 
 // include the following mixins
+@include media-queries;
 @include font-style;
 @include hover-style;
+
+// navigation styles
+@include nav-div-style;
 @include sidebar-style;
 
+// page specific mixins
 @include portfolio-style;
 @include about-style;
 @include resume-style;
