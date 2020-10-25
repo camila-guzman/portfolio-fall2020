@@ -19,10 +19,10 @@
     .nav-div {
       display: none;
     }
-    .portfolio,
-    .about,
-    .resume,
-    .contact {
+    #portfolio,
+    #about,
+    #resume,
+    #contact {
       margin-left: 380px;
       padding: $p-standard;
     }
@@ -141,17 +141,36 @@
 }
 
 @mixin portfolio-style {
-  .portfolio {
+  #portfolio {
     padding: $p-minimum;
     padding-top: 0px;
   }
 }
 
 @mixin about-style {
+  #about {
+    display: none;
+    padding: $p-minimum;
+    padding-top: 0px;
+  }
 }
 
 @mixin resume-style {
+  #resume {
+    display: none;
+    padding: $p-minimum;
+    padding-top: 0px;
+  }
 }
 
 @mixin contact-style {
+  #contact {
+    display: none;
+    padding: $p-minimum;
+    padding-top: 0px;
+  }
+  #contact ul {
+    list-style-type: none;
+    padding: 0px;
+  }
 }
