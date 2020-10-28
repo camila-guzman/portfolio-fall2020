@@ -21,8 +21,8 @@
             <!--title: name-->
             <h2 class="name">Camila Guzman</h2>
 
-            <button class="toggle-nav">
-                <span><i class="fas fa-bars"></i></span>
+            <button id="toggle-nav">
+                <i class="fas fa-bars"></i>
             </button>
         </header>
         <div class="nav-content">
@@ -32,22 +32,19 @@
 
             <!--social nav-->
             <nav class="social-nav">
-                <span><i class="fab fa-github-square"></i> </span><a href="https://github.com/camilamguzman" style="margin-left: 8px">@camilamguzman on GitHub</a><br />
-                <span><i class="fab fa-linkedin"></i></span><a class="linkedin" href="https://www.linkedin.com/in/camila-m-guzman/" style="margin-left: 12px">camila-m-guzman on LinkedIn</a>
+                <a href="https://github.com/camilamguzman">@camila-guzman on GitHub</a><br />
             </nav>
 
             <nav class="nav-bar">
-                <a href="#portfolio"> <span>Portfolio</span></a>
-                <a href="#about"> <span>About</span></a>
-                <a href="#resume"><span>Resume</span></a>
-                <a href="#contact"><span>Contact</span></a>
+                <a href="#portfolio"> <span>Portfolio.</span></a>
+                <a href="#about"> <span>About.</span></a>
+                <a href="#resume"><span>Resume.</span></a>
+                <a href="#contact"><span>Contact.</span></a>
             </nav>
         </div>
     </div>
     <div class="grid">
         <div class="sidebar">
-            <!--logo
-            <img src='./images/cg-logo.png' class="logo-img" />-->
             <!--title: name-->
             <h2 class="name">Camila Guzman</h2>
 
@@ -57,14 +54,13 @@
 
             <!--social nav-->
             <nav class="social-nav">
-                <span><i class="fab fa-github-square"></i> </span><a href="https://github.com/camilamguzman" style="margin-left: 8px">@camilamguzman on GitHub</a><br />
-                <span><i class="fab fa-linkedin"></i></span><a class="linkedin" href="https://www.linkedin.com/in/camila-m-guzman/" style="margin-left: 12px">camila-m-guzman on LinkedIn</a>
+                <a href="https://github.com/camilamguzman">@camila-guzman on GitHub</a><br />
             </nav>
             <!--page nav-->
             <nav class="page-nav">
-                <a href="#portfolio"> <span>Portfolio</span></a>
-                <a href="#about"> <span>About</span></a>
-                <a href="#resume"><span>Resume</span></a>
-                <a href="#contact"><span>Contact</span></a>
+                <a href="#portfolio"> <span>Portfolio.</span></a>
+                <a href="#about"> <span>About.</span></a>
+                <a href="#resume"><span>Resume.</span></a>
+                <a href="#contact"><span>Contact.</span></a>
             </nav>
         </div>
