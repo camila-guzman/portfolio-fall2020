@@ -14,17 +14,124 @@
       margin-left: 20px;
       width: 75%;
     }
+    .section {
+      display: none;
+      margin: $m-standard;
+    }
+    #portfolio {
+      display: block;
+    }
+    .live-link {
+      margin-right: 120px;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+    }
   }
   @media only screen and (min-width: 571px) {
     .nav-div {
       display: none;
+    }
+    .section {
+      display: none;
+    }
+    #portfolio {
+      display: block;
     }
     #portfolio,
     #about,
     #resume,
     #contact {
       margin-left: 380px;
-      padding: $p-standard;
+      padding: 40px;
+      padding-top: 20px;
+    }
+    .project img {
+      width: 80%;
+      height: auto;
+    }
+    .project-1-grid,
+    .project-2-grid,
+    .project-3-grid,
+    .project-4-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    .project-1-grid img {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-1-grid .date {
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-1-grid .desc {
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-1-grid .live-link {
+      grid-row: 5 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-1-grid .code-link {
+      grid-row: 5 / span 1;
+      grid-column: 3 / span 1;
+    }
+
+    .project-2-grid img {
+      grid-row: 6 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-2-grid .date {
+      grid-row: 7 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-2-grid .desc {
+      grid-row: 8 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-2-grid .live-link {
+      grid-row: 9 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    .project-3-grid .img {
+      grid-row: 10 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-3-grid .date {
+      grid-row: 11 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-3-grid .desc {
+      grid-row: 12 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-3-grid .live-link {
+      grid-row: 13 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    .project-4-grid .img {
+      grid-row: 14 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-4-grid .date {
+      grid-row: 15 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-4-grid .desc {
+      grid-row: 16 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-4-grid .live-link {
+      grid-row: 17 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-4-grid .code-link {
+      grid-row: 17 / span 1;
+      grid-column: 3 / span 1;
     }
   }
 }
@@ -35,14 +142,21 @@
     color: $dark-color;
   }
   h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 200;
+    border-bottom: 2px solid $dark-color;
+  }
+  h2 {
+    font-size: 1.75em;
+    font-weight: 200;
+    margin: 0;
   }
   .name {
     font-size: 2em;
     font-weight: 200;
   }
-  .nav-bar {
+  .nav-bar,
+  .button {
     font-size: 1.5em;
   }
   .page-nav a {
@@ -57,6 +171,12 @@
   .social-nav {
     line-height: 25px;
   }
+  h4,
+  .live-link,
+  .code-link {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
 }
 
 @mixin hover-style {
@@ -66,6 +186,12 @@
   }
   .page-nav a:hover {
     writing-mode: horizontal-tb;
+  }
+  button:hover {
+    color: $medium-color;
+  }
+  #toggle-nav:hover {
+    border-color: $medium-color !important;
   }
 }
 
@@ -82,13 +208,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: $p-minimum 0px;
   }
-  .toggle-nav {
+  #toggle-nav {
     background: none;
     border: 2px solid $dark-color;
     width: 30px;
     height: 30px;
     margin-right: $m-standard;
+    padding: $p-minimum;
+    padding-top: 5px;
+    padding-left: 10px;
   }
   .nav-content {
     display: none;
@@ -104,7 +234,7 @@
 @mixin sidebar-style {
   .sidebar {
     padding: $p-standard;
-    padding-top: $p-minimum;
+    padding-top: $p-standard;
     background-color: $light-color;
     border-right: 2px solid $dark-color;
     position: fixed;
@@ -133,6 +263,7 @@
     margin: 0;
     display: flex;
     align-items: baseline;
+
     margin-top: $m-standard;
   }
   .page-nav a {
@@ -141,34 +272,33 @@
 }
 
 @mixin portfolio-style {
-  #portfolio {
-    padding: $p-minimum;
-    padding-top: 0px;
+  #portfolio img {
+    border: 2px solid $dark-color;
+  }
+  .project {
+    margin-bottom: $m-standard;
+  }
+  .project h2 {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+  .border {
+    border-bottom: 2px solid $dark-color;
+    width: 100%;
+    margin: $m-standard 0px;
+  }
+  .gif {
+    width: 100%;
   }
 }
 
 @mixin about-style {
-  #about {
-    display: none;
-    padding: $p-minimum;
-    padding-top: 0px;
-  }
 }
 
 @mixin resume-style {
-  #resume {
-    display: none;
-    padding: $p-minimum;
-    padding-top: 0px;
-  }
 }
 
 @mixin contact-style {
-  #contact {
-    display: none;
-    padding: $p-minimum;
-    padding-top: 0px;
-  }
   #contact ul {
     list-style-type: none;
     padding: 0px;
