@@ -36,8 +36,8 @@
   <div class="project">
     <h2>UCF Agencies</h2>
     <div class="project-3-grid">
-      <img class="gif" src="./images/agencies-demo-gif.gif" />
-      <p class="date">September 2020.</p>
+      <img src="./images/agencies-screen-crop.jpg" />
+      <p class=" date">September 2020.</p>
       <p class="desc">This is </p>
       <a class="live-link" href="https://osi.ucf.edu/agencies/">View Project.</a>
 
