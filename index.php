@@ -57,7 +57,7 @@
       <p class=" date">September 2020.</p>
       <div class="desc">This is the revamped page for the University of Central Florida's Office of Student Involvement (OSI) Agencies page that I designed. I created a custom animation that displays each student agency's logo, a short description, and a link to their page. <br><br> This design works for both web and mobile users, providing more context and identity to each agency with a single hover! </div>
       <a class="live-link" href="https://osi.ucf.edu/agencies/">View Project.</a>
-      <a class="live-link" href="https://osi.ucf.edu/agencies/">View OSI Repository.</a>
+      <a class="code-link" href="https://osi.ucf.edu/agencies/">View OSI Repository.</a>
 
     </div>
   </div>
