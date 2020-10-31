@@ -19,7 +19,9 @@
     <div class="nav-div">
         <header>
             <!--title: name-->
-            <h2 class="name">Camila Guzman</h2>
+            <a href="index.php">
+                <h2 class="name">Camila Guzman</h2>
+            </a>
 
             <button id="toggle-nav">
                 <i class="fas fa-bars"></i>
@@ -36,10 +38,10 @@
             </nav>
 
             <nav class="nav-bar">
-                <a href="#portfolio"> <span>Portfolio.</span></a>
-                <a href="#about"> <span>About.</span></a>
-                <a href="#resume"><span>Resume.</span></a>
-                <a href="#contact"><span>Contact.</span></a>
+                <a href="index.php#about"> <span>About.</span></a>
+                <a href="index.php#portfolio"> <span>Portfolio.</span></a>
+                <a href="index.php#resume"><span>Resume.</span></a>
+                <a href="index.php#contact"><span>Contact.</span></a>
             </nav>
         </div>
     </div>
@@ -58,8 +60,8 @@
             </nav>
             <!--page nav-->
             <nav class="page-nav">
-                <a href="#portfolio"> <span>Portfolio.</span></a>
                 <a href="#about"> <span>About.</span></a>
+                <a href="#portfolio"> <span>Portfolio.</span></a>
                 <a href="#resume"><span>Resume.</span></a>
                 <a href="#contact"><span>Contact.</span></a>
             </nav>
