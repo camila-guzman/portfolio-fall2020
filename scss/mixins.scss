@@ -116,6 +116,10 @@
       grid-row: 13 / span 1;
       grid-column: 1 / span 1;
     }
+    .project-3-grid .code-link {
+      grid-row: 13 / span 1;
+      grid-column: 3 / span 1;
+    }
 
     .project-4-grid .img {
       grid-row: 14 / span 1;
@@ -311,11 +315,11 @@
 }
 
 @mixin contact-style {
-  #contact #contact ul {
+  .contact-nav {
     list-style-type: none;
     padding: 0px;
   }
-  #contact li {
+  .contact-nav li {
     margin-bottom: 10px;
   }
 }
