@@ -12,21 +12,24 @@
     }
     .name {
       margin-left: 20px;
-      width: 75%;
     }
     .section {
-      display: none;
+      display: block;
       margin: $m-standard;
     }
-    #portfolio {
-      display: block;
-    }
     .live-link {
-      margin-right: 120px;
+      margin-right: 80px;
     }
     .project img {
       width: 100%;
       height: auto;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .live-link,
+    .live-link2 {
+      display: block;
+      margin-bottom: 10px;
     }
   }
   @media only screen and (min-width: 571px) {
@@ -34,9 +37,6 @@
       display: none;
     }
     .section {
-      display: none;
-    }
-    #portfolio {
       display: block;
     }
     #portfolio,
@@ -44,17 +44,21 @@
     #resume,
     #contact {
       margin-left: 380px;
-      padding: 40px;
-      padding-top: 20px;
+      padding: $p-standard;
+      padding-top: $p-minimum;
     }
     .project img {
       width: 80%;
       height: auto;
     }
+    .desc {
+      width: 80%;
+    }
     .project-1-grid,
     .project-2-grid,
     .project-3-grid,
-    .project-4-grid {
+    .project-4-grid,
+    .resume-grid {
       display: grid;
       grid-template-columns: auto auto auto;
     }
@@ -129,8 +133,15 @@
       grid-row: 17 / span 1;
       grid-column: 1 / span 1;
     }
+    .project-4-grid .live-link2 {
+      grid-row: 18 / span 1;
+      grid-column: 1 / span 1;
+    }
     .project-4-grid .code-link {
-      grid-row: 17 / span 1;
+      grid-row: 18 / span 1;
+      grid-column: 3 / span 1;
+    }
+    .resume-grid a {
       grid-column: 3 / span 1;
     }
   }
@@ -141,14 +152,16 @@
     font-family: "Karla", sans-serif;
     color: $dark-color;
   }
+  h1,
+  h2 {
+    font-weight: 200;
+  }
   h1 {
     font-size: 2em;
-    font-weight: 200;
     border-bottom: 2px solid $dark-color;
   }
   h2 {
     font-size: 1.75em;
-    font-weight: 200;
     margin: 0;
   }
   .name {
@@ -173,6 +186,7 @@
   }
   h4,
   .live-link,
+  .live-link2,
   .code-link {
     font-size: 1.5em;
     font-weight: 200;
@@ -225,9 +239,10 @@
     margin: $m-standard;
   }
   .nav-bar {
-    display: flex;
-    justify-content: space-between;
     padding: 20px 0px;
+  }
+  .nav-bar a {
+    display: block;
   }
 }
 
@@ -254,6 +269,9 @@
   }
   .name {
     border-bottom: 2px solid $dark-color;
+  }
+  .resume-title {
+    width: 60%;
   }
   .social-nav {
     margin-top: $m-standard;
@@ -287,17 +305,17 @@
     width: 100%;
     margin: $m-standard 0px;
   }
-}
-
-@mixin about-style {
-}
-
-@mixin resume-style {
+  .desc {
+    margin-bottom: $m-standard;
+  }
 }
 
 @mixin contact-style {
-  #contact ul {
+  #contact #contact ul {
     list-style-type: none;
     padding: 0px;
+  }
+  #contact li {
+    margin-bottom: 10px;
   }
 }
