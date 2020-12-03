@@ -38,10 +38,10 @@
             </nav>
 
             <nav class="nav-bar">
-                <a href="index.php#about"> <span>About.</span></a>
-                <a href="index.php#portfolio"> <span>Portfolio.</span></a>
-                <a href="index.php#resume"><span>Resume.</span></a>
-                <a href="index.php#contact"><span>Contact.</span></a>
+                <a href="index.php#about"> <span>About</span></a>
+                <a href="index.php#portfolio"> <span>Portfolio</span></a>
+                <a href="index.php#resume"><span>Resume</span></a>
+                <a href="index.php#contact"><span>Contact</span></a>
             </nav>
         </div>
     </div>
@@ -60,9 +60,9 @@
             </nav>
             <!--page nav-->
             <nav class="page-nav">
-                <a href="#about"> <span>About.</span></a>
-                <a href="#portfolio"> <span>Portfolio.</span></a>
-                <a href="#resume"><span>Resume.</span></a>
-                <a href="#contact"><span>Contact.</span></a>
+                <a href="#about"> <span>About</span></a>
+                <a href="#portfolio"> <span>Portfolio</span></a>
+                <a href="#resume"><span>Resume</span></a>
+                <a href="#contact"><span>Contact</span></a>
             </nav>
         </div>
