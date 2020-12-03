@@ -34,7 +34,7 @@
 
             <!--social nav-->
             <nav class="social-nav">
-                <a href="https://github.com/camilamguzman">@camila-guzman on GitHub</a><br />
+                <a href="https://github.com/camila-guzman">@camila-guzman on GitHub</a><br />
             </nav>
 
             <nav class="nav-bar">
@@ -56,7 +56,7 @@
 
             <!--social nav-->
             <nav class="social-nav">
-                <a href="https://github.com/camilamguzman">@camila-guzman on GitHub</a><br />
+                <a href="https://github.com/camila-guzman">@camila-guzman on GitHub</a><br />
             </nav>
             <!--page nav-->
             <nav class="page-nav">
