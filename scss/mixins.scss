@@ -14,15 +14,16 @@
       margin-left: 20px;
     }
     .section {
-      display: block;
+      display: inline-block;
       margin: $m-standard;
-    }
-    .live-link {
-      margin-right: 80px;
     }
     .project img {
       width: 100%;
       height: auto;
+    }
+    .project a {
+      margin-right: 20px;
+      line-height: 1.5em;
     }
   }
   @media only screen and (max-width: 425px) {
@@ -40,13 +41,20 @@
       display: block;
     }
     #portfolio,
-    #about,
     #resume,
+    #about,
     #contact {
       margin-left: 380px;
-      padding: $p-standard;
+      padding-left: 40px;
+      padding-top: 0px;
+      padding-right: 70px;
+      padding-bottom: 20px;
+    }
+
+    #about {
       padding-top: $p-minimum;
     }
+
     .project img {
       width: 80%;
       height: auto;
@@ -58,7 +66,7 @@
     .project-2-grid,
     .project-3-grid,
     .project-4-grid,
-    .resume-grid {
+    .project-5-grid {
       display: grid;
       grid-template-columns: auto auto auto;
     }
@@ -97,7 +105,7 @@
     }
     .project-2-grid .live-link {
       grid-row: 9 / span 1;
-      grid-column: 1 / span 1;
+      grid-column: 1 / span 2;
     }
 
     .project-3-grid .img {
@@ -137,16 +145,38 @@
       grid-row: 17 / span 1;
       grid-column: 1 / span 1;
     }
-    .project-4-grid .live-link2 {
+    .project-4-grid .code-link {
+      grid-row: 17 / span 1;
+      grid-column: 3 / span 1;
+    }
+
+    .project-5-grid .img {
       grid-row: 18 / span 1;
       grid-column: 1 / span 1;
     }
-    .project-4-grid .code-link {
-      grid-row: 18 / span 1;
+    .project-5-grid .date {
+      grid-row: 19 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-5-grid .desc {
+      grid-row: 20 / span 1;
+      grid-column: 1 / span 3;
+    }
+    .project-5-grid .live-link {
+      grid-row: 21 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-5-grid .live-link2 {
+      grid-row: 22 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .project-5-grid .code-link {
+      grid-row: 22 / span 1;
       grid-column: 3 / span 1;
     }
-    .resume-grid a {
-      grid-column: 3 / span 1;
+
+    .contact-grid {
+      display: block;
     }
   }
 }
@@ -173,13 +203,9 @@
     font-weight: 200;
   }
   .nav-bar,
-  .button {
+  .button,
+  .page-nav {
     font-size: 1.5em;
-  }
-  .page-nav a {
-    writing-mode: vertical-rl;
-    font-size: 1.75em;
-    text-align: right;
   }
   a {
     text-decoration: none;
@@ -192,8 +218,9 @@
   .live-link,
   .live-link2,
   .code-link {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 200;
+    width: 100%;
   }
 }
 
@@ -247,6 +274,7 @@
   }
   .nav-bar a {
     display: block;
+    line-height: 1.5em;
   }
 }
 
@@ -283,13 +311,13 @@
   .page-nav {
     list-style-type: none;
     margin: 0;
-    display: flex;
-    align-items: baseline;
 
     margin-top: $m-standard;
   }
   .page-nav a {
     margin-right: $m-standard;
+    display: block;
+    line-height: 1.75em;
   }
 }
 
@@ -308,6 +336,7 @@
     border-bottom: 2px solid $dark-color;
     width: 100%;
     margin: $m-standard 0px;
+    opacity: 25%;
   }
   .desc {
     margin-bottom: $m-standard;
