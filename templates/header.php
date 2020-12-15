@@ -29,7 +29,7 @@
         </header>
         <div class="nav-content">
             <p>
-                Developer and designer interested in web development and product design!
+                Developer and designer
             </p>
 
             <!--social nav-->
@@ -50,7 +50,7 @@
             <h2 class="name">Camila Guzman</h2>
 
             <p>
-                Developer and designer interested in web development and product design!
+                Developer and designer
             </p>
 
             <!--social nav-->
