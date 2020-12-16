@@ -24,12 +24,15 @@
         <img src="./images/butterscotch-bakery-shopping-screen.png" />
         <p class="date">December 2020</p>
         <div class="desc"> I added more features to my bakery website!<br><br>
-          Now you can create an account by visiting 'Place Order', log in, place an item in your cart, delete your account, and finally log out. I used MySQL to organize a database with two tables: one for account information with encrypted passwords and a second table for menu items.<br><br>
+          Now you can create an account by visiting 'Place Order', log in, place an item in your cart, delete your account, and finally log out.
+          <br><br>
 
-          I'm currently working on creating a fully functioning shopping cart using PHP and MySQL! If you'd like to see this feature in progress, click 'View Code' to view the GitHub repository!
+          I used MySQL to organize a database with two tables: one for account information with encrypted passwords and a second table for menu items.<br><br>
+
+          I'm currently working on improving this update so it is in my development branch! I will continue working on implementing a fully functioning shopping cart with PHP and MySQL
         </div>
         <a class="live-link" href="https://butterscotch-bakery.herokuapp.com/">View Project</a>
-        <a class="code-link" href="https://github.com/camila-guzman/butterscotch-bakery">View Repo</a>
+        <a class="code-link" href="https://github.com/camila-guzman/butterscotch-bakery/tree/dev">View Repo</a>
 
       </div>
     </div>
